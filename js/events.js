@@ -20,6 +20,8 @@ function frameIt() {
 }
 function pressIt() {
   $("input#typing").on("keydown", function(key) {
-    
+    if(key.which == 71) {
+      alert("you have pressed G");
+    }
   })
 }
